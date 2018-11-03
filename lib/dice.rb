@@ -1,7 +1,8 @@
 class Dice
 
-  def roll
-    rand(1..6)
+  def roll(num)
+    result = num.times.map { rand(1..6) }
+    result
   end
 
 end

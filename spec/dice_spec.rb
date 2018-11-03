@@ -16,4 +16,10 @@ describe Dice do
     allow(dice).to receive(:roll) { 3 }
   end
 
+  it "allows any number of dice to be rolled at once" do
+    value = 3, 4
+    allow(dice).to receive(:roll).and_return(value)
+    expect(dice.roll(2)).to eq value
+  end
+
 end
