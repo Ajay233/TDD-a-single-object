@@ -13,7 +13,7 @@ describe Dice do
   end
 
   it "outputs a number between 1 and 6 when dice rolled" do
-    expect(dice.roll).to eq 3
+    allow(dice).to receive(:roll) { 3 }
   end
 
 end

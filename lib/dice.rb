@@ -1,7 +1,7 @@
 class Dice
 
   def roll
-    3
+    rand(1..6)
   end
 
 end
