@@ -1,8 +1,12 @@
 class Dice
+  attr_accessor :no_of_dice
 
-  def roll(num)
-    result = num.times.map { rand(1..6) }
-    result
+  def initialize(num = 1)
+    @no_of_dice = num
+  end
+
+  def roll
+    @no_of_dice.times { puts rand(1..6) }
   end
 
 end
