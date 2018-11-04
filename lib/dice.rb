@@ -6,7 +6,8 @@ class Dice
   end
 
   def roll
-    @no_of_dice.times { puts rand(1..6) }
+    result = @no_of_dice.times.map { rand(1..6) }
+    result
   end
 
 end
